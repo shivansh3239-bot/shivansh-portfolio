@@ -658,3 +658,54 @@ aside {
     margin: 0;
     flex: 0 0 200px;    /*-----------Fix 200px, na grow na shrink----------*/
 }
+
+.hero figure img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 4px solid #ff6f00;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero-text {
+    flex: 1;        /*------baki space le lo-------------*/
+    min-width: 300px;       /*---------Bahut chhota na ho----------*/
+}
+
+/*----------Mobile Responsive----------*/
+
+@media screen and (max-width: 768px) {
+
+    /*-----Layout column mein----------*/
+
+    .layout-container {
+        flex-direction: column;
+        padding: 10px;
+        gap: 20px;
+    }
+
+    main, aside {
+        flex: none;
+        width: 100%;
+    }
+
+    /*---Hero text upar, Photo neeche--------*/
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-text {
+        order: 1;  /*-----Upar text--------*/
+    } 
+    .hero figure {
+        order: 2;   /*--------Neeche photo-----------*/
+        flex:   none;
+    }
+
+    /*--------Navigation Wrap----------*/
+    nav ul {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
