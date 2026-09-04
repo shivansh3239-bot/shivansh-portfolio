@@ -673,6 +673,7 @@ aside {
     min-width: 300px;       /*---------Bahut chhota na ho----------*/
 }
 
+
 /*----------Mobile Responsive----------*/
 
 @media screen and (max-width: 768px) {
@@ -708,4 +709,29 @@ aside {
         flex-wrap: wrap;
         gap: 10px;
     }
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;  /*---------Logo left nav right----------*/
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #1a237e;
+    color: white;
+}
+.logo h1 {
+    margin: 0;
+    font-size: 28px;
+}
+.logo p {
+    margin: 0;
+    font-size: 14px;
+    color: #ffcc80;
+}
+header nav ul {
+    display: flex;
+    gap: 0px;
+    list-style: none;
+    margin: 0;
+    padding: -20;
 }
