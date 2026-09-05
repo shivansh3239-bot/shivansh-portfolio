@@ -735,3 +735,136 @@ header nav ul {
     margin: 0;
     padding: -20;
 }
+.container {
+    display: flex;
+    align-items: center;
+}
+.item1 {
+    /*-----------Kuch nhi -left mein rahega---------*/
+}
+.item2 {
+    /*---------Kuch nahi - left mein rahega-----------*/
+}
+.item3 {
+    margin-left: auto;   /*--------yeh item right mein chala jayega----------*/
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.logo {
+    /*---------------Left mein rahega----------*/
+}
+header nav {
+    margin-left: auto; /*---------Nav ko right side dhakel do!----------*/
+}
+.parent {
+    display: flex;
+    justify-content: center;    /*--------Horizontal centre--------*/
+    align-items: center;        /*--------Vertical centre----------*/
+    height: 100vh;              /*--------Parent ki heoght---------*/
+}
+.coming-soon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000vh;               /*--------60% screen height--------*/
+    text-align: center;
+}
+.card-container {
+    display: flex;
+    align-items: stretch;      /*---------Default - sab stretch hoke barabar height lete hain---------*/
+    gap: 20px;
+}
+.card {
+    flex: 1;                    /*--------Sab barabar width-----------*/
+    background: white;
+    padding: 50px;
+    border-radius: 90px;
+}
+.skill-grid {
+    display: flex;
+    gap: 20px;  
+    align-items: stretch;
+}
+.skill-card {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 35px;
+    border-top: 4px solid #ff6f00;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width: 768px) {
+    .skill-grid {
+        flex-direction: column;
+    }
+}
+.container {
+    display: flex;
+    align-items: center;    /* Sab center mein */
+}
+
+.item1 {
+    /* Center mein rahega */
+}
+
+.item2 {
+    align-self: flex-start;   /* Yeh upar chala jayega! */
+}
+
+.item3 {
+    /* Center mein rahega */
+}
+
+
+
+
+/* ----- EXPERIENCE CARDS ----- */
+.job-card {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;    /* Upar se align */
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #1a237e;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.job-date {
+    flex: 0 0 120px;           /* Fix 120px width */
+    text-align: center;
+}
+
+.job-date .year {
+    background: #1a237e;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.job-details {
+    flex: 1;
+}
+
+.job-details h3 {
+    margin: 0 0 10px 0;
+    color: #283593;
+}
+
+.job-details ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.job-details ul li {
+    margin-bottom: 6px;
+    color: #555;
+}
